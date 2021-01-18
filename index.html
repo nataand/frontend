@@ -2,10 +2,67 @@
  <html lang="en">
  <head>
  	<meta charset="utf-8"> 
- 	<title></title>
+ 	<title>Meet with html tags. Chapter 4.WebForm</title>
  </head>
  <body>
- 	
+ 	<form action="#" method="post" enctype="multipart/form-data">
+ 		<div>
+ 			<p>Name</p>
+ 			<input tabindex="1" type="text" name="username">
+ 		</div>
+ 		<div>
+ 			<p>Password</p>
+ 			<input tabindex="2" type="password" name="userpass">
+ 		</div>
+ 		<div>
+ 			<p>Phone Number</p>
+ 			<input tabindex="3" type="tel" name="userphone">
+ 		</div>
+ 		<div>
+ 			<p>Gender</p> 
+ 		    <div>
+ 			   <input tabindex="4" type="radio" name="gender" value="male">Male
+ 		    </div>
+ 		    <div>
+ 			   <input tabindex="4" type="radio" name="gender" value="female">Female
+ 		    </div>
+ 		</div>
+ 		<div>
+ 			<p>Property</p>
+ 			<div>
+ 				<input checked tabindex="5" type="checkbox" name="bike" value="yes">Bike
+ 			</div>
+ 			<div>
+ 				<input tabindex="6" type="checkbox" name="car" value="yes">Car
+ 			</div>
+ 			<div>
+ 				<input disabled tabindex="7" type="checkbox" name="home" value="yes">Home
+ 			</div>
+ 		</div>
+ 		<div>
+ 			<p>Add Information</p>
+ 			<textarea tabindex="8" type="text"></textarea>
+ 		</div>
+ 		<div>
+ 			<p>Attach a photo</p>
+ 			<input tabindex="9" type="file">
+ 		</div>
+ 		<div>
+ 			<p>Favourite colour</p>
+ 			<select tabindex="10" name="colour">
+ 				<option value="red">Red</option>
+ 				<option value="green">Green</option>
+ 				<option value="blue">Blue</option>
+ 				<option value="yellow">Yellow</option>
+ 			</select>
+ 		</div>
+ 		<div>
+ 			<p>Actions</p>
+ 			<button tabindex="11" type="submit">Send</button>
+ 			<button tabindex="12" type="reset">Clear</button>
+ 		</div>
+ 	</form>
+
  </body>
  </html>
 
