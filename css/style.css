@@ -8,6 +8,7 @@ font-family: 'Rubik', sans-serif; */
 *{box-sizing: border-box;}
 
 body{
+    /* min-width: 1600px; */
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
 }
@@ -19,6 +20,28 @@ body{
     background-image: url(../img/background-header-img.png);
     margin: 0 auto;  
 }
+
+/* @media (max-width:1600px){
+    .wrapper{
+        max-width: 1366px;
+    }
+}
+
+@media (max-width:1366px){
+    .wrapper{
+        max-width: 1024px;
+    }
+}
+
+@media (max-width:1024px){
+    .wrapper{
+        max-width: 768px;
+    }
+} */
+
+
+
+
 
 .header{
     width: 100%;
@@ -604,7 +627,7 @@ body{
     text-align: center;
     /* width: 842px; */
     /* height: 162px; */
-    padding: 56px 379px 80px 379px;
+    padding: 56px 379px 60px 379px;
 }
 
 .footer_nav_title{
@@ -650,7 +673,8 @@ body{
 }
 
 .footer_icon{
-   padding-left: 257px;
+    padding-top:15px;
+    padding-left: 257px;
 }
 
 .facebook_icon{
