@@ -212,14 +212,14 @@ template {
   display: none;
 }
 
+
+
+
+
 body {
-  font-size: 34px;
+  font-size: 18px;
 }
 
-body div {
-  font-size: 44px;
-}
-
-body p {
-  background-color: darkblue;
+body .header {
+  font-weight: 800;
 }
