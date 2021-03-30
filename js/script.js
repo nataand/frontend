@@ -200,7 +200,7 @@
 
 
 
-let i = 0;
+// let i = 0;
 // while (i < 5) { 
 //   alert( i );
 //   i++;
@@ -213,8 +213,180 @@ let i = 0;
 // } while (i < 5);
 
 
-for(;;) {
-    let somePrompt = +prompt("Введите число","")
-        if (somePrompt > 100 || break);
+// for(;;) {
+//     let somePrompt = +prompt("Введите число","")
+//         if (somePrompt > 100 || break);
     
-  }
+//   }
+
+
+// let phrases = [
+//     "That sounds good",
+//     "Yes, you should definitely do that",
+//     "I'm not sure that's a great idea",
+//     "Maybe not today?",
+//     "Computer says no."
+//     ];
+//     //Мені пожарити млинці сьогодні?
+    
+//     phrases[Math.floor(Math.random() * 5)];
+//     "Computer says no."
+//     //Гена сьогодні буде працювать дома?
+//     phrases[Math.floor(Math.random() * 5)];
+//     "Maybe not today?"
+
+    
+//     let someNumber [3, 2, 1];
+//     someNumber.join( );
+ 
+//     let someNumber = [3, 2, 1];
+//     someNumber.join(" is bigger than ");
+//     "3 is bigger than 2 is bigger than 1"
+
+
+
+
+
+//     let puma = {name: "Puma", age: 1, color: "black", luckyNumbers:[2, 8, 14, 33]};
+// let jun = {name: "Junior", age: 5, color: "pockmarked", luckyNumbers:[3, 5, 13, 28]};
+// let easy = {name: "Easy", age: 6, color: "grey", luckyNumbers:[1, 4, 15, 22]};
+
+// let cats = [puma, jun, easy];
+
+           
+// undefined
+// cats.length;
+// 3
+// puma.length;
+// undefined
+// cats[0]["luckyNumbers"][2];
+// 14
+// cats[0];
+// {name: "Puma", age: 1, color: "black", luckyNumbers: Array(4)}
+// cats[0];
+// {name: "Puma", age: 1, color: "black", luckyNumbers: Array(4)}age: 1color: "black"luckyNumbers: Array(4)0: 21: 82: 143: 33length: 4__proto__: Array(0)concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {copyWithin: true, entries: true, fill: true, find: true, findIndex: true, …}__proto__: Objectname: "Puma"__proto__: Object
+// cats;
+// (3) [{…}, {…}, {…}]
+
+
+
+
+
+// let lemonChicken = false;
+// let beefWithBlackBean = true;
+// let sweetAndSourPork = true;
+
+// if(lemonChicken) {
+//     alert("Great! I'm having lemon chicken!");
+// } else if(beefWithBlackBean) {
+//     alert("I'm having the beef.");
+// } else if(sweetAndSourPork) {
+//     alert("Ok, I'll have the pork.");
+// } else {
+//     alert("Well, I guess I'll have the rice then.");
+// }
+
+
+
+
+// let animals = [
+//     "Cat",
+//     "Fish",
+//     "Lemur",
+//     "Komodo Dragon"
+//   ];
+//   for (let i = 0; i < animals.length; i++) {
+//     console.log("Awesome " + animals[i]);
+//   }
+  
+
+
+
+
+// let alphabet = "0123456789abcdifghijklmnopqrstuvwxyz";
+// let randomString = "";
+
+// while( randomString.length < 10 ) {
+//   randomString += alphabet[Math.floor(Math.random() * alphabet.length)]
+// }
+// console.log(randomString);
+
+
+
+// var animals = ["Cat", "Fish", "Lemur", "Komodo Dragon"];
+
+// for (var i = 0; i < animals.length; i++) {
+//   animals[i] = "Awesome " + animals[i];
+// }
+
+// console.log(animals);
+
+
+// var input = "javascript is awesome";
+// var output = "";
+
+// for (var i = 0; i < input.length; i++) {
+//   if (input[i] === "a") {
+//     output += "4";
+//   } else if (input[i] === "e") {
+//     output += "3";
+//   } else if (input[i] === "i") {
+//     output += "1";
+//   } else if (input[i] === "o") {
+//     output += "0";
+//   } else {
+//     output += input[i];
+//   }
+// }
+
+// console.log(output);
+
+
+
+
+
+
+// let words = [
+//     "javascript",
+//     "monkey",
+//     "amazing",
+//     "pancake"
+// ];
+
+// let word = words[Math.floor(Math.random() * words.length)];
+
+// let answerArray = [];
+// for (i = 0; i < word.length; i++) {
+//     answerArray[i] = "_";
+// }
+
+// let remainingLetters = word.length;
+
+// while (remainingLetters > 0) {
+//     alert(answerArray);
+
+//     let guess = prompt("Guess a letter, or click cancel to stop playing.");
+//     if (guess === null) {
+//         break;
+//     } else if (guess.length !== 1) {
+//         alert("Please enter a single letter.")
+//     } else {
+//         for (let j = 0; j < word.length; j++) {
+//             if (word[j] === guess) {
+//                 answerArray[j] = guess;
+//                 remainingLetters--;
+//             }
+//         }
+
+//     }
+// }
+
+// alert(answerArray);
+// alert("God job! The answer was" + word);
+
+
+
+
+
+
+
