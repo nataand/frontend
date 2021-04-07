@@ -346,6 +346,145 @@
 
 
 
+
+
+
+
+
+// HUNGMAN
+
+
+// Повертаємо випадкове слово
+let pickWord = function () {
+    let words = [
+        "javascript",
+        "monkey",
+        "amazing",
+        "pancake"
+    ];
+
+    return words[Math.floor(Math.random() * words.length)];
+};
+
+
+// Повертаємо масив відповідей
+let setupAnswerArray = function (word) {
+    let answerArray = [];
+    for (let i = 0; i < word.length; i++) {
+    answerArray[i] = "_";
+}
+    return answerArray;
+}
+
+
+//Використаємо alert щоб показати гравцю його прогрес
+let showPlayerProgress = function (answerArray) {
+    alert(answerArray.join(" "));
+};
+
+
+//Використаємо запит на введення, щоб отримати варіанти відповіді
+let getGuess = function () {
+   return prompt("Guess a letter, or click cancel to stop playing.");
+};
+
+
+// Оновіть масив відповідей та поверніть число, що показує, скільки разів даний варіант відповіді 
+// фігурує у слові, щоб масив ramainingLetters міг оновитися
+let updateGameState = function (guess, word, answerArray) {
+    let appearences = 0;
+    for (let j = 0; j < word.length; j++) {
+        if (word[j] === guess) {
+            answerArray[j] = guess;
+            appearences++;
+        }
+    }
+    return appearences;
+};
+
+
+//Скористайтесь alertб щоб привітати гравця та показати відповідь
+let showAnswerAndCongratulatePlayer = function (answerArray) {
+    showPlayerProgress(answerArray);
+      alert("Good job! The answer was " + answerArray.join(""));
+};
+
+let word = pickWord();
+let answerArray = setupAnswerArray(word);
+let remainingLetters = word.length;
+
+
+while (remainingLetters > 0) { 
+    showPlayerProgress(answerArray);
+    let guess = getGuess();
+    if (guess === null) {
+      break;
+    } else if (guess.length !== 1) {
+      alert("Please enter a single letter.");
+    } else {
+      let correctGuesses = updateGameState(guess, word, answerArray);
+      remainingLetters -= correctGuesses;
+    }
+  }
+
+  showAnswerAndCongratulatePlayer(answerArray);
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let words = [
 //     "javascript",
 //     "monkey",
@@ -388,5 +527,97 @@
 
 
 
+//CALC
+
+// let firstNumber = prompt("Enter first number")
+// let secondNumber = prompt("Enter second number")
+// let calcOperator = prompt("Enter '-', '+', '/' or '*'")
+// let result 
+
+// if (calcOperator === '+') {
+//   result = +firstNumber + +secondNumber
+// } else if (calcOperator === '-') {
+//   result = firstNumber -= secondNumber
+// } else if (calcOperator === '*') {
+//   result = firstNumber *= secondNumber
+// } else if (calcOperator === '/') {
+//   result = firstNumber /= secondNumber
+// } else {
+//   ("Try again")
+// }
+// alert(Number(result));
 
 
+
+
+
+
+
+
+// let pickRandomWord = function (words) {
+//     return words[Math.floor(Math.random() * words.length)];
+//   };
+  
+//   let randomBodyParts = ["Face", "Nose", "Hair"];
+//   let randomAdjectives = ["Smelly", "Boring", "Stupid"];
+//   let randomWords = ["Fly", "Marmot", "Stick", "Monkey", "Rat"];
+  
+//   let randomString = "Your " + pickRandomWord(randomBodyParts) + " is like a " + 
+//   pickRandomWord(randomAdjectives) + " " + pickRandomWord(randomWords) + " !!! ";
+
+
+
+
+
+
+
+
+//   let fifthLetter = function (name) {
+//     if (name.length < 5) {
+//       return;
+//     }
+//     return "The fifth letter of your name is " + name[4] + ".";
+//   };
+  
+//   console.log(fifthLetter("Nata"));
+
+
+
+
+
+
+
+
+//   number0 = 777;
+// number1 = 36325;
+// number2 = 9824;
+ 
+// let add = function (number1, number2) {
+//   return number1 + number2;
+// }
+
+// let multiply = function (number1, number2) {
+//   return number1 * number2;
+// }
+
+// console.log(add(multiply(36325, 9824), 777));
+
+
+
+
+
+// let areArraySame = function (arr1, arr2) {
+//     if (arr1.length !== arr2.length) {
+//       return false;
+//     }
+//     for (let i = 0; i < arr1.length; i++) {
+//       if (arr1[i] !== arr2[i]) {
+//         return false;
+//       }
+//     }
+//     return true;
+//   };
+  
+//   console.log(areArraySame([1,2,3], [1,2,3]));
+//   console.log(areArraySame([1,2,3], [1,3,3]));
+//   console.log(areArraySame([1,2,3], [1,2,3]));
