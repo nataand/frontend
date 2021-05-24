@@ -1,5 +1,22 @@
+*{
+    box-sizing: border-box;
+} 
  
+body{
+    font-family: Arial, sans-serif;
+}
 header{
-    background-image: url(../img/first-bg.jpg) no-repeat center top / cover;
+    background: url(../img/first-bg.jpg) no-repeat center top / cover;
     height: 600px;
+}
+.container{
+    width: 930px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.logo{
+    margin-top: 41px;
+}
+nav{
+    
 }
